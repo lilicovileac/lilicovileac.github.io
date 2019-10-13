@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="full-height">
+<head>
+	<title>Admitere Licenta 2019</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="Styles/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="Styles/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<body>
+<header>
+  	<nav class="navbar navbar-expand-lg navbar-dark">
+  		<div class="container">
+    	<a class="navbar-brand" href="http://admiteremoldova.uab.ro/"><img src="Styles/sigla_uab_75.png" height="50">Universitatea „1 Decembrie 1918” din Alba Iulia</a>
+    	<span class="navbar-brand mb-0 h1"><strong>Admitere 2019</strong> Republica Moldova</span>
+    	</div>
+	</nav>
+</header>
+<main>
+	<div class="container">
+	<h4><center>Formular admitere pentru candidații din Republica Moldova</center></h4>
+	<h3><center><strong>Licență</strong></center></h3><br>
+
+<form class="form-horizontal" role="form" action="confirmation.php" method="POST" enctype="multipart/form-data">
+		<hr>
+			<div class="form-group form-inline"><label for="Required" class="col-md-4 control-label"></label>
+			<p class="col-md-8 mb-0"><em>Câmpurile marcate cu <strong>*</strong> sunt obligatorii</em></p></div>
+		<hr>
+		<div class="form-group form-inline"><label for="Surname" class="col-md-4 control-label">Nume*</label>
+			<input type="text" class="form-control col-md-8" name="nume" id="numeCandidat" required></div>
+		<div class="form-group form-inline"><label for="Name" class="col-md-4 control-label">Prenume*</label>
+			<input type="text" class="form-control col-md-8" name="prenume" id="prenumeCandidat" required></div>
+		<div class="form-group form-inline"><label for="Email" class="col-md-4 control-label">Email*</label>
+			<input type="email" class="form-control col-md-8" name="email" id="emailCandidat" required></div>
+		<div class="form-group form-inline"><label for="Phone" class="col-md-4 control-label">Numar de telefon*</label>
+			<input type="tel" class="form-control col-md-8" name="telefon" id="numarCandidat" required></div>
+			<hr>
+			<div class="form-group form-inline"><label for="Nota" class="col-md-4 control-label"><em><strong>Notă:</strong></em></label>
+			<p class="col-md-8 mb-0"><em>Doar fișierele în formatul <strong class="text-danger">.pdf</strong> sunt acceptate!. Dimensiune maximă pe fișier <strong>8 MB</strong></em></p></div>
+			<hr>
+		<div class="form-group form-inline"><label for="" class="col-md-4 control-label" >Cerere*</label>
+			<input type="file" accept=".pdf" name="Cerere" id="Cerere" required></div>
+		<div class="form-group form-inline"><label for="" class="col-md-4 control-label" >Pasaport*</label>
+			<input type="file" accept=".pdf" name="Pasaport" id="Pasaport" required></div>
+		<div class="form-group form-inline"><label for="" class="col-md-4 control-label" >Certificat de nastere*</label>
+			<input type="file" accept=".pdf" name="CertNastere" id="CertNastere" required></div>
+		<div class="form-group form-inline"><label for="" class="col-md-4 control-label" >Certificat de casatorie</label>
+			<input type="file" accept=".pdf" name="CertCasatorie" id="CertCasatorie"></div>
+		<div class="form-group form-inline"><label for="" class="col-md-4 control-label" >Foaie Matricola*</label>
+			<input type="file" accept=".pdf" name="foaieMatricola" id="foaieMatricola" required></div>
+		<div class="form-group form-inline"><label for="" class="col-md-4 control-label" >Diploma de Bacalaureat*</label>
+			<input type="file" accept=".pdf" name="diplomaBAC" id="diplomaBAC" required></div>
+		<div class="form-group form-inline"><label for="" class="col-md-4 control-label" >Declaraţie pe proprie răspundere*</label>
+			<input type="file" accept=".pdf" name="declaratie" id="declaratie" required></div>
+		<div class="form-group form-inline"><label for="" class="col-md-4 control-label" >Adeverinţa medicală*</label>
+			<input type="file" accept=".pdf" name="adeverinta" id="adeverinta" required></div>
+		<div class="form-group form-inline"><label for="" class="col-md-4 control-label" >GDPR*</label>
+			<input type="file" accept=".pdf" name="GDPR" id="GDPR" required></div><br>
+		<div class="form-group"><center><input type="submit" name="Submit" value="Trimite" class="btn btn-primary"></center></div>	
+	</form>
+</div>
+<br><br><br><br><br><br>
+</main>
+</body>
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
+	<div class="container text-white">
+		<h3 class="mr-0">Contact</h3><br>
+		<p>
+  			<strong>Oras:</strong> Alba Iulia,
+			<strong>Strada:</strong> Gabriel Bethlen Nr.5,
+			<strong>Cod Postal:</strong> 510009<br>
+			<strong>Tel:</strong> +40-0258-806042, 
+			<strong>Fax:</strong> +40-0258-806042<br> 
+			<strong>E-mails:</strong> <a href="mailto:bpc@uab.ro" class="text-white">bpc@uab.ro</a>,
+			<a href="mailto:relint@uab.ro" class="text-white">relint@uab.ro</a>,
+			<a href="mailto:erasmusplus_uab@yahoo.com" class="text-white">erasmusplus_uab@yahoo.com</a>,
+			<a href="mailto:international_uab@yahoo.com" class="text-white">international_uab@yahoo.com</a></p>
+	</div>
+</nav>
+
+</html>
