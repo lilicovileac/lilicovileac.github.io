@@ -1,7 +1,13 @@
 # lilicovileac.github.io
 
-# aplicatii diverse pentru materiaa de pdm
+# Hello and welcome to my page
 
-**bold text here**  _some italic text_ 
+Hi!  This is **My page** and my first time using Markdown
 
-[My site is](www.google.com) 
+
+
+
+[This is a link for a site ](www.google.com) _guess which one :)_ 
+
+> **Note** This is me atempting to make a note
+
