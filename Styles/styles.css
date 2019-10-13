@@ -1,0 +1,55 @@
+.container header
+ {
+	height: 105px;
+}
+
+html,
+body
+{
+  height: 100%;
+}
+.navbar{
+    z-index: 1;
+    background-color: #002e5b;
+}
+/*footer {
+	padding:7px;
+	background: rgb(77, 115, 175);
+	color: white;
+	font-family: Arial;
+	font-size: 11px;
+	bottom: 0px;
+	width: 100%;
+	position: relative;
+
+}*/
+footer a {
+ 		color: white;
+ }
+main
+{
+	padding: 20px;
+}
+#abtn
+{
+	padding: 7px;
+}
+#base_btn
+{
+	height: 250px;
+	
+}
+.fixed
+{
+	position: fixed;
+}
+
+div.form-inline label.col-md-4{
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+.jumbotron {
+  background-image: url("Banner WEB Admitere RM copy.png");
+  background-size: cover;
+}
