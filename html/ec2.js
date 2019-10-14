@@ -1,10 +1,12 @@
+document.getElementById("id_logic_version").innerHTML = "logic verions = 2019.10.14.0";
+
 function solve_eq2()
 {
-    var a = document.getElementById("id_a").nodeValue;
-    var b = document.getElementById("id_b").nodeValue;
-    var c = document.getElementById("id_c").nodeValue;
+    var a = document.getElementById("id_a").Value;
+    var b = document.getElementById("id_b").Value;
+    var c = document.getElementById("id_c").Value;
 
-    var delta = b*b-4*a*c;
+    var delta = b*b -4*a*c;
     var x1_im, x1_re, x2_im, x2_re;
     if(delta >= 0)
     {
