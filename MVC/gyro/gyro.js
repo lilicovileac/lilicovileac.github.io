@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML = "Logic = 2019.11.4.2";
+document.getElementById("id_logic_version").innerHTML = "Logic = 2019.11.4.3";
 
 window.addEventListener("deviceorientation", on_gyro_data_uab);
 window.addEventListener("devicemotion", on_acc_data_uab);
@@ -17,4 +17,10 @@ function on_acc_data_uab(e)
     document.getElementById("id_acc_x").innerHTML = acc.x.toFixed(2);
     document.getElementById("id_acc_y").innerHTML = acc.y.toFixed(2);
     document.getElementById("id_acc_z").innerHTML = acc.z.toFixed(2);
+
+    var rot_x = Math.atan(acc.x/acc/z) * 180 / Math.PI;
+    var rot_y = Math.atan(acc.x/acc/z) * 180 / Math.PI;
+
+    document.getElementById("id_rot_x").innerHTML = rot_x.toFixed(2);
+    document.getElementById("id_rot_y").innerHTML = rot_y.toFixed(2);
 }
