@@ -1,3 +1,4 @@
+var ruleaza = false;
 onmessage = function (e)
 {
     if(e.data == "start")
@@ -19,7 +20,7 @@ function este_prim(n)
 
 function start(start_value)
 {
-    if(!ruleaza);
+    if(ruleaza == false);
     else
     {
         for(var i = start_value; i< start_value + 100; i++)
