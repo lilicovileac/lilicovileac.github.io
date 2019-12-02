@@ -1,4 +1,4 @@
-document.getElementById("id_cerere", request_clicked);
+document.getElementById("id_cerere").addEventListener("click", request_clicked);
 
 function ok_f(p)
 {
